@@ -1,0 +1,45 @@
+{
+  "name": "work",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conch-girl/work.git"
+  },
+  "keywords": [
+    "work",
+    "WFH",
+    "WLB",
+    "996",
+    "ICU",
+    "life"
+  ],
+  "author": "Rain120",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/conch-girl/work/issues"
+  },
+  "homepage": "https://github.com/conch-girl/work#readme",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+  },
+  "packageManager": "pnpm@6.32.9"
+} 
